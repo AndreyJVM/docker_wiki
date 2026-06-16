@@ -26,3 +26,26 @@ lxc list
 | my-web-container | RUNNING | 10.169.24.128 (eth0) |      | CONTAINER | 0         |
 +------------------+---------+----------------------+------+-----------+-----------+
 ```
+
+### Manage containers
+
+```shell
+# Stop container
+lxc stop my-web-container
+
+# Start container
+lxc start my-web-container
+
+# restart container
+lxc restart my-web-container
+
+# delete container
+lxc delete my-web-container
+```
+
+### Exec container
+
+```shell
+lxc exec my-web-container -- bash
+# exit 
+```
